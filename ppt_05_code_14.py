@@ -7,6 +7,9 @@ data = pd.DataFrame({ 	"age":[48, 47, 10, 16, 18],
 
 
 color = {"M": "#273c75", "F": "#44bd32"}
+
+# el metodo .replace reemplaza los valores de la columna gender por 
+# los colores definidos en el diccionario color
 data["age"].plot(kind="bar", color=data['gender'].replace(color))
 plt.title("Family Age Study")
 plt.show()

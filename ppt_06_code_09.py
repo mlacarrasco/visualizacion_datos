@@ -31,13 +31,14 @@ ids = df.loc[df["Pais"]=="Chile"]
 xs =ids["TasaFertilidad"].iloc[0]
 ys = ids["IngresoPerCapita"].iloc[0]
 
-plt.annotate("Chile", # this is the text
-            (xs,ys), # this is the point to label
-            textcoords="offset points", # how to position the text
-            xytext=(50,50), # distance from text to points (x,y)
+plt.annotate("Chile", # este es el texto
+            (xs,ys), # estas son las coordenadas del punto
+            textcoords="offset points", # cómo posicionar el texto
+            xytext=(50,50), # distancia del texto al punto (x,y)
             size = 15,
             arrowprops=dict(arrowstyle="->", color='black', lw=1.5),
-            ha='left') # horizontal alignment can be left, right or center
+            ha='left',
+            fontsize=15) # alineación horizontal: left, right o center
 
 ax.set_title('Niños por mujer vs Ingreso per cápita 2019')
 ax.set_xlabel('Promedio de niños por mujer (log 2)')

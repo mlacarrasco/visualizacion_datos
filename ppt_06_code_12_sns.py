@@ -19,8 +19,14 @@ ys = np.log10(df['IngresoPerCapita'])
 fig, ax = plt.subplots(figsize=(8,8))
 ax.grid()
 ax.yaxis.set_major_formatter(fmtr)
-sb.regplot(x = xs, y =ys, data = df, ci=95, order =1)
-ax.scatter(xs,ys, color=df['Continente'].replace(colorbar), marker='.', s=210)
+sb.regplot(x = xs, y =ys, data = df, ci=95, order =1, label="Curva Regresion")
+
+ax.scatter(xs,ys, 
+           color=df['Continente'].replace(colorbar), 
+           marker='o', 
+           s=50, 
+           alpha=0.7)
+
 ax.set_title('Niños por mujer vs Ingreso per cápita 2019')
 ax.set_xlabel('Promedio de niños por mujer (log2)')
 ax.set_ylabel('Promedio de per cápita, en miles de US$ (log10)')

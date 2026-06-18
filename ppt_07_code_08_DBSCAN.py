@@ -15,7 +15,6 @@
     
 """
 import pandas as pd
-import sklearn.utils
 import numpy as np
 import matplotlib.pyplot as plt
 

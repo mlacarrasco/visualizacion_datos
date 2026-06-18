@@ -4,12 +4,15 @@ import matplotlib.pyplot as plt
 import matplotlib
 from matplotlib.patches import Patch
 
+#en este codigo cambiamos la paleta de colores para cada continente, 
+# para favorecer la diferencia entre ellos en el gráfico de dispersión
+
 colorbar ={"Africa":'k', 
-  "Asia":'y', 
-  "North America":'r', 
-  "Europe":'b', 
-  "Oceania":'g', 
-  "South America":'m'}
+           "Asia":'y', 
+           "North America":'r', 
+           "Europe":'b', 
+           "Oceania":'g', 
+           "South America":'m'}
 
 
 def miles(x, pos):

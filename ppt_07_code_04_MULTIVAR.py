@@ -1,7 +1,7 @@
 import numpy as np
 import random
 import matplotlib.pyplot as plt
-from matplotlib.patches import Ellipse
+
 from scipy.stats import chi2
 from sklearn.datasets import make_blobs
 from pandas import DataFrame

@@ -8,7 +8,7 @@ plotdata = pd.DataFrame({ 	"pies_2018":[40, 12, 10, 26, 36],
 
 plotdata["pies_2018"].plot(kind="bar")
 
-plt.title("Mince Pie Consumption Study")
+plt.title("Mince Pie Consumption Study in 2018")
 plt.xlabel("Family Member")
 plt.ylabel("Pies Consumed")
 plt.show()

@@ -14,7 +14,7 @@ ax.grid(alpha=0.3)
 
 p= sns.regplot(x = xs, y =ys, ci=None, order=6, label="Curva Regresion")
 
-ax.scatter(xs, ys ,marker='.', color = 'r', s=210, label="Norteamerica")
+ax.scatter(xs, ys ,marker='o', color = 'r', s=30, label="Norteamerica")
 
 ax.set_title('Niños por mujer vs Ingreso per cápita 2019')
 ax.set_xlabel('Promedio de niños por mujer')

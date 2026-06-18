@@ -49,7 +49,7 @@ plt.ylabel('Distancias entre vecinos por punto')
 plt.show()
 
 #definir un umbral (el umbral se define en función del punto codo)
-umbral = 1
+umbral = 0.5
 indices = tnn_distance > umbral
 
 

@@ -31,11 +31,11 @@ print(__doc__)
 
 np.random.seed(42)
 
-# Generate train data
+# Generar datos de entrenamiento
 X_inliers = 0.3 * np.random.randn(100, 2)
 X_inliers = np.r_[X_inliers + 2, X_inliers - 2]
 
-# Generate some outliers
+# Generar algunos valores atípicos (outliers)
 X_outliers = np.random.uniform(low=-4, high=4, size=(20, 2))
 X = np.r_[X_inliers, X_outliers]
 
@@ -43,18 +43,21 @@ n_outliers = len(X_outliers)
 ground_truth = np.ones(len(X), dtype=int)
 ground_truth[-n_outliers:] = -1
 
-# fit the model for outlier detection (default)
+# Ajustar el modelo para detección de outliers (por defecto)
 clf = LocalOutlierFactor(n_neighbors=20, contamination=0.1)
-# use fit_predict to compute the predicted labels of the training samples
-# (when LOF is used for outlier detection, the estimator has no predict,
-# decision_function and score_samples methods).
+
+# Usar fit_predict para calcular las etiquetas predichas de los datos de entrenamiento
+# (cuando LOF se usa para detección de outliers, el estimador no tiene predict,
+# decision_function ni score_samples).
 y_pred = clf.fit_predict(X)
+
 n_errors = (y_pred != ground_truth).sum()
 X_scores = clf.negative_outlier_factor_
 
 plt.title("Local Outlier Factor (LOF)")
 plt.scatter(X[:, 0], X[:, 1], color='k', s=3., label='Data points')
-# plot circles with radius proportional to the outlier scores
+
+# Dibujar círculos con radio proporcional a los scores de outlier
 radius = (X_scores.max() - X_scores) / (X_scores.max() - X_scores.min())
 plt.scatter(X[:, 0], X[:, 1], s=1000 * radius, edgecolors='r',
             facecolors='none', label='Outlier scores')

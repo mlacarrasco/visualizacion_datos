@@ -5,15 +5,14 @@ import matplotlib
 from matplotlib.patches import Patch
 
 colorbar ={"Africa":'r', 
-  "Asia":'y', 
-  "North America":'c', 
-  "Europe":'g', 
-  "Oceania":'b', 
-  "South America":'m'} 
+           "Asia":'y', 
+           "North America":'c', 
+           "Europe":'g', 
+           "Oceania":'b', 
+           "South America":'m'} 
   
 def miles(x, pos):
     return '${:,.1f} M'.format(x*1e-3)
-
 
 fmtr = matplotlib.ticker.FuncFormatter(miles)
 

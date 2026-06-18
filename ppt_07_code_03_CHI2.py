@@ -18,6 +18,7 @@ df = df.to_numpy()
 fig = plt.figure()
 plt.scatter(df[:,0], df[:,1], marker='o', color='blue', s=50)
 plt.show()
+
 # Matriz de covarianza
 covariance  = np.cov(df , rowvar=False)
 
@@ -37,7 +38,7 @@ for i, val in enumerate(df):
       
 distances = np.array(distances)
 
-# Punto de término de Distribución Chi-Square para detectar outlier.
+# Punto de corte de la distribución Chi-cuadrado para detectar outliers.
 cutoff = chi2.ppf(0.95, df.shape[1])
 
 # Indices de Outliers
@@ -53,14 +54,23 @@ print(df[ distances > cutoff , :])
 lambda_, v = np.linalg.eig(covariance)
 lambda_ = np.sqrt(lambda_)
 
-# Ellipse patch
-ellipse = patches.Ellipse(xy=(centerpoint[0], centerpoint[1]),
-                  width=lambda_[0]*np.sqrt(cutoff)*2, height=lambda_[1]*np.sqrt(cutoff)*2,
-                  angle=np.rad2deg(np.arccos(v[0, 0])))
-ellipse.set_facecolor('#0984e3')
-ellipse.set_alpha(0.5)
+# Parche de la elipse con gradiente radial (más difuso hacia los bordes)
 fig = plt.figure()
 ax = plt.subplot()
-ax.add_artist(ellipse)
-plt.scatter(df[: , 0], df[ : , 1], color= "blue", s=50)
+
+n_levels = 20
+for k in range(1, n_levels + 1):
+    scale = k / n_levels
+    ell = patches.Ellipse(
+        xy=(centerpoint[0], centerpoint[1]),
+        width=lambda_[0] * np.sqrt(cutoff) * 2 * scale,
+        height=lambda_[1] * np.sqrt(cutoff) * 2 * scale,
+        angle=np.rad2deg(np.arccos(v[0, 0]))
+    )
+    ell.set_facecolor('#0984e3')
+    ell.set_edgecolor('none')
+    ell.set_alpha(0.05)
+    ax.add_artist(ell)
+
+plt.scatter(df[: , 0], df[ : , 1], color="blue", s=50)
 plt.show()

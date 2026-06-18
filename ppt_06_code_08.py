@@ -23,11 +23,14 @@ xs = ids["TasaFertilidad"].iloc[0]
 ys = ids["IngresoPerCapita"].iloc[0]
 
 ax.annotate(label,
-            xy=(xs, ys),                  # el punto a ser etiquetado
+            xy=(xs, ys),                    # el punto a ser etiquetado
             xytext=(100, 100),              # distancia del texto al punto
             textcoords="offset points",
-            arrowprops=dict(arrowstyle="->", color='black', lw=1.5),
-            ha='center')
+            arrowprops=dict(arrowstyle="->",  # estilo de la flecha
+                            color='black',
+                            lw=1.5,connectionstyle="arc3,rad=0.2"),
+            ha='center',
+            fontsize=15)
 
 ax.grid()
 ax.yaxis.set_major_formatter(fmtr)

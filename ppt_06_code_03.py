@@ -6,6 +6,8 @@ import matplotlib
 def miles(x, pos):
     return '${:,.1f} M'.format(x*1e-3)
 
+# FuncMatter es una clase de matplotlib que permite 
+# formatear los valores de los ejes
 fmtr = matplotlib.ticker.FuncFormatter(miles)
 
 df = pd.read_csv('data/tasaFertilidad2019vsGPD.csv')

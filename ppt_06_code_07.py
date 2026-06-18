@@ -20,6 +20,10 @@ df = pd.read_csv('data/tasaFertilidad2019vsGPD.csv')
 fig, ax = plt.subplots(figsize=(8,8))
 ax.grid()
 ax.yaxis.set_major_formatter(fmtr)
+
+# recorremos cada continente para graficar cada uno con un color y marcador diferente, 
+# y para agregar una leyenda con el nombre de cada continente
+
 for i in range(len(continents)):
   df_sel= df[df['Continente']==continents[i]]
   x = df_sel['TasaFertilidad']
@@ -28,11 +32,11 @@ for i in range(len(continents)):
 
   for xs,ys in zip(x,y):
     label = continents[i]
-    plt.annotate(label, # this is the text
-                 (xs,ys), # this is the point to label
-                 textcoords="offset points", # how to position the text
-                 xytext=(0,10), # distance from text to points (x,y)
-                 ha='center') # horizontal alignment can be left, right or center
+    plt.annotate(label, # este es el texto
+                 (xs,ys), # estas son las coordenadas de cada punto
+                 textcoords="offset points", # cómo posicionar el texto
+                 xytext=(0,10), #distancia del texto al punto (x,y)
+                 ha='center') # alineación horizonal puede ser: left, right or center
 
 ax.set_title('Niños por mujer vs Ingreso per cápita 2019')
 ax.set_xlabel('Promedio de niños por mujer')
