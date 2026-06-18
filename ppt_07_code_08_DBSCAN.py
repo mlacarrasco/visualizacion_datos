@@ -1,7 +1,8 @@
 """
- Universidad Adolfo Ibañez
+ Universidad Diego Portales
  Facultad de Ingeniería y Ciencias
- Inteligencia de Negocios- TICS 423
+ Visualización de Datos
+
  
  Miguel Carrasco (miguel.carrasco@uai.cl)
  version 1.0 (02/09/2019)
@@ -21,7 +22,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import DBSCAN
 
-df=pd.read_csv('week5.csv')   # lee los datos del archivo csv
+df=pd.read_csv('data/week5.csv')   # lee los datos del archivo csv
 df.dropna(subset=['op','ag'], inplace=True)
 data_df = df[["op","ag"]]
 
@@ -29,7 +30,6 @@ data_df= StandardScaler().fit_transform(data_df)
 db= DBSCAN(eps=0.5, min_samples=5).fit(data_df)
 labels = np.array(db.labels_)
 
-colores=['red', 'blue', 'green', 'black']
 fig, ax = plt.subplots()
 for i in set(labels):
     index= labels==i

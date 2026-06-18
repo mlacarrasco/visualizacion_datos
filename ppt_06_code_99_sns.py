@@ -7,7 +7,7 @@ import seaborn as sns
 from scipy import stats
 
 def annotate(data, **kws):
-    r, p = sp.stats.pearsonr(data['total_bill'], data['tip'])
+    r, p = stats.pearsonr(data['total_bill'], data['tip'])
     ax = plt.gca()
     ax.text(.05, .8, 'r={:.2f}, p={:.2g}'.format(r, p),
             transform=ax.transAxes)

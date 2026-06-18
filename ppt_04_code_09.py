@@ -14,5 +14,5 @@ df = pd.DataFrame({'Age':col_1,
 
 plt.figure(figsize=(8,8))
 
-ax = sns.violinplot(data=df, split=True, inner="quartile")
+ax = sns.violinplot(data=df, inner="quartile")
 plt.show()

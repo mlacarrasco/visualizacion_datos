@@ -10,7 +10,7 @@ x = np.random.normal(mu, sigma, size=100)
 fig, ax = plt.subplots(figsize=(8, 4))
 
 ax.grid(True)
-ax.hist(x)
+ax.hist(x, n_bins)
 ax.set_title('Rainfall histogram (mm)')
 
 plt.show()

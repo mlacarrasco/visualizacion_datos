@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.stats import chi2
 
 data = [[0,0],[2,1], [2,2], [3,1], [4,2],[8,1]]
 data = np.array(data)
@@ -15,7 +14,7 @@ for i in range(0,data.shape[0]):
     if (i!=j):
       d[i,j] = round(np.sqrt((data[i,0]-data[j,0])**2 + (data[i,1]-data[j,1])**2 ),2)
     else:
-      d[i,j]= np.infty
+      d[i,j]= np.inf
 
 print(d)
 

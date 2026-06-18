@@ -13,6 +13,6 @@ df = pd.DataFrame({'Age':col_1,
                    'Height': col_2})
 
 
-ax = sns.violinplot(x=df['Height'], split=True, inner="quartile")
+ax = sns.violinplot(x=df['Height'], inner="quartile")
 
 plt.show()

@@ -59,7 +59,7 @@ print(knn_distances)
 plt.scatter(X[:, 0], X[:,1], color='red')
 plt.scatter(X[indices, 0], X[indices,1], color='blue')
 plt.xlabel('X')
-plt.xlabel('Y')
+plt.ylabel('Y')
 plt.show()
 
 

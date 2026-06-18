@@ -25,7 +25,7 @@ for i in range(len(continents)):
   df_sel= df[df['Continente']==continents[i]]
   x = df_sel['TasaFertilidad']
   y = df_sel['IngresoPerCapita']
-  ax.scatter(x,y, color=df_sel['Continente'].replace(colorbar), marker=None,label=continents[i], s=50)
+  ax.scatter(x,y, color=df_sel['Continente'].replace(colorbar), marker='.',label=continents[i], s=50)
  
 ids = df.loc[df["Pais"]=="Chile"]
 xs =ids["TasaFertilidad"].iloc[0]
