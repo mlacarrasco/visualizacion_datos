@@ -2,24 +2,27 @@
 # Autor: Miguel Carrasco
 # Ver: 1.0
 # Fecha: 19/06/2026
-# Descripción: Aplicación de un estilo predefinido de Matplotlib (fivethirtyeight)
+# Descripción: Aplicación de un estilo predefinido de Matplotlib (ggplot)
 
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib
-matplotlib.style.use('fivethirtyeight') 
+matplotlib.style.use('ggplot') 
+#otros estilos disponibles: 'ggplot', 'seaborn', 'bmh', 'dark_background', 'grayscale', 'fivethirtyeight'
 
 plotdata = pd.DataFrame({ 	"pies_2018":[40, 12, 10, 26, 36],    				   
 							"pies_2019":[19, 8, 30, 21, 38],    
 			   				"pies_2020":[10, 10, 42, 17, 37] },    
                           index=["Dad", "Mam", "Bro", "Sis", "Me"])
 
-plotdata.plot(kind="bar")
+plotdata.plot(kind="bar", figsize=(10,5))
 
-plt.title("Mince Pie Consumption Study")
-plt.xlabel("Family Member")
-plt.ylabel("Pies Consumed")
+plt.title("Estudio de consumo de Pies en la familia")
+plt.xlabel("Miembros de la familia")
+plt.ylabel("Pies consumidos")
 
 plt.xticks(rotation=45, horizontalalignment="center")
+plt.grid(axis="y", linestyle="--", alpha=0.3)
+plt.tight_layout()
 plt.show()
 

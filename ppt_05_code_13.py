@@ -19,9 +19,10 @@ sumcol = np.sum(plotdata.values, axis=1)
 plotdata = plotdata.divide(sumcol, axis=0)
 plotdata.plot(kind="bar", stacked= True)
 
-plt.title("Mince Pie Consumption Per Year")
-plt.xlabel("Year")
-plt.ylabel("Pies Consumed (%)")
+plt.title("Consumo de Pies por Año")
+plt.xlabel("Año")
+plt.ylabel("Pies Consumidos (%)")
+plt.tight_layout()
 plt.show()
 
 

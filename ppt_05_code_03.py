@@ -15,13 +15,14 @@ width = 0.35
 
 fig = plt.figure()
 
-plt.bar(ind, menMeans, width, color = 'r')
-plt.bar(ind, womenMeans, width, bottom=menMeans, color = 'b')
+plt.bar(ind, menMeans, width, color = 'r',zorder=0)
+plt.bar(ind, womenMeans, width, bottom=menMeans, color = 'b',zorder=0)
 
 plt.ylabel('Scores')
 plt.title('Scores by group and gender')
 plt.xticks(ind, ('G1', 'G2', 'G3', 'G4', 'G5'))
 plt.yticks(np.arange(0, 81, 10))
+plt.grid(axis='y',linestyle='--', alpha=0.3,zorder=1)
 
 plt.legend(labels=['Men', 'Women'])
 plt.show()

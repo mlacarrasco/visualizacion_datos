@@ -25,8 +25,9 @@ dist = pairwise_distances(X_scaled, metric='euclidean')
 mds = manifold.MDS(n_components=2, dissimilarity="precomputed")
 points = mds.fit_transform(dist)
 
-fig = plt.figure(figsize=(10,10))
+fig = plt.figure(figsize=(8,8))
 ax = fig.add_subplot()
+plt.title('MDS del dataset Wine')
 
 for l in np.unique(labels):
     
@@ -34,4 +35,6 @@ for l in np.unique(labels):
     ax.scatter(points[ix,0],points[ix,1], label=labl[l],s=40)
 
 plt.legend()
+plt.tight_layout()
+
 plt.show()

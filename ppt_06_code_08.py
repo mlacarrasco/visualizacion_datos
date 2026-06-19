@@ -24,7 +24,7 @@ df = pd.read_csv('data/tasaFertilidad2019vsGPD.csv')
 fig, ax = plt.subplots(figsize=(8,8))
 
 label = "Chile"
-ids = df.loc[df["Pais"]=="Chile"]
+ids =  df.where(df["Pais"]=="Chile").dropna()
 xs = ids["TasaFertilidad"].iloc[0]
 ys = ids["IngresoPerCapita"].iloc[0]
 
@@ -33,12 +33,12 @@ ax.annotate(label,
             xytext=(100, 100),              # distancia del texto al punto
             textcoords="offset points",
             arrowprops=dict(arrowstyle="->",  # estilo de la flecha
-                            color='black',
+                            color='black',alpha=0.7,
                             lw=1.5,connectionstyle="arc3,rad=0.2"),
             ha='center',
             fontsize=15)
 
-ax.grid()
+ax.grid(alpha=0.3, linestyle='--')
 ax.yaxis.set_major_formatter(fmtr)
 for i in range(len(continents)):
   df_sel= df[df['Continente']==continents[i]]

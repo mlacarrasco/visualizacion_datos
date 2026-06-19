@@ -13,7 +13,8 @@ df.drop('Class',axis='columns', inplace=True)
 
 correlation_mat = df.corr()
 
-fig = plt.figure(figsize=(10,10))
+fig = plt.figure(figsize=(8,8))
 
 sns.heatmap(correlation_mat, annot = True)
+plt.tight_layout()
 plt.show()

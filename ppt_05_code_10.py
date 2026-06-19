@@ -12,10 +12,12 @@ plotdata = pd.DataFrame({ 	"pies_2018":[40, 12, 10, 26, 36],
 			   				"pies_2020":[10, 10, 42, 17, 37] },    
                           index=["Dad", "Mam", "Bro", "Sis", "Me"])
 
-plotdata.plot(kind="barh")
+plotdata.plot(kind="barh", figsize=(7,5))
 
-plt.title("Mince Pie Consumption Study")
-plt.xlabel("Family Member")
-plt.ylabel("Pies Consumed")
+plt.title("Consumo de Pies en la familia")
+plt.xlabel("Miembros de la familia")
+plt.ylabel("Pies consumidos")
+plt.tight_layout()
+plt.grid(axis="x", linestyle="--", alpha=0.3, zorder=0)
 plt.show()
 

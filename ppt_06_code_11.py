@@ -18,7 +18,7 @@ ys = df_sel['IngresoPerCapita']
 fig, ax = plt.subplots(figsize=(8,8))
 ax.grid(alpha=0.3)
 
-p= sns.regplot(x = xs, y =ys, ci=None, order=6, label="Curva Regresion")
+p = sns.regplot(x = xs, y =ys, ci=None, order=6, label="Curva Regresion")
 
 ax.scatter(xs, ys ,marker='o', color = 'r', s=30, label="Norteamerica")
 

@@ -24,7 +24,7 @@ df = pd.read_csv('data/tasaFertilidad2019vsGPD.csv')
 
 
 fig, ax = plt.subplots(figsize=(8,8))
-ax.grid()
+ax.grid(alpha=0.3, linestyle='--')
 ax.yaxis.set_major_formatter(fmtr)
 
 # recorremos cada continente para graficar cada uno con un color y marcador diferente, 

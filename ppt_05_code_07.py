@@ -14,9 +14,10 @@ plotdata = pd.DataFrame({ 	"pies_2018":[40, 12, 10, 26, 36],
 
 plotdata["pies_2018"].plot(kind="bar")
 
-plt.title("Mince Pie Consumption Study in 2018")
-plt.xlabel("Family Member")
-plt.ylabel("Pies Consumed")
+plt.title("Estudio de consumo de Pies en la familia en 2018")
+plt.xlabel("Miembros de la familia")
+plt.ylabel("Pies consumidos")
+plt.tight_layout()
 plt.show()
 
 

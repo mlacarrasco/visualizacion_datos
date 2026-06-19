@@ -21,6 +21,6 @@ plt.yticks(my_range, ordf['Country'])
 plt.scatter(ordf['2019'], my_range, color='skyblue', label='2019')
 plt.scatter(ordf['2020'], my_range, color='green', label='2020')
 plt.legend()
-
+plt.grid(axis='x', linestyle='--', alpha=0.5)
 plt.show()
 

@@ -14,10 +14,9 @@ x = df['TasaFertilidad']
 y = df['IngresoPerCapita']
 
 fig = plt.figure(figsize=(8,8))
-plt.grid()
+plt.grid(axis='both', linestyle='--', alpha=0.3)
 
 plt.scatter(x, y, color='k')
-
 plt.xlabel('Tasa de Fertilidad')
 plt.ylabel('Ingreso per Cápita')
 plt.show()

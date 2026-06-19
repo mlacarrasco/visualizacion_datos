@@ -18,9 +18,10 @@ plotdata = plotdata.divide(sumcol, axis=0)
 
 plotdata.plot(kind="bar", stacked= True)
 
-plt.title("Mince Pie Consumption Breakdown")
-plt.xlabel("Family Member")
-plt.ylabel("Percentage Pies Consumed (%)")
+plt.title("Consumo de Pies en la familia")
+plt.xlabel("Miembros de la familia")
+plt.ylabel("Porcentaje de Pies Consumidos (%)")
+plt.tight_layout()
 plt.show()
 
 

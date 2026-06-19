@@ -24,7 +24,7 @@ for i in range(0,data.shape[0]):
 
 print(d)
 
-k=3
+k = 3
 #buscamos los k vecinos máás cercanos a cada punto
 average_mat = np.zeros((data.shape[0],1))
 for i in range(0,data.shape[0]):

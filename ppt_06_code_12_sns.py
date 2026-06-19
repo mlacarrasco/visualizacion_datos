@@ -23,7 +23,7 @@ xs = np.log2(df['TasaFertilidad'])
 ys = np.log10(df['IngresoPerCapita'])
 
 fig, ax = plt.subplots(figsize=(8,8))
-ax.grid()
+ax.grid(alpha=0.3, linestyle='--')
 ax.yaxis.set_major_formatter(fmtr)
 sb.regplot(x = xs, y =ys, data = df, ci=95, order =1, label="Curva Regresion")
 
@@ -47,7 +47,7 @@ plt.legend(
 
     ], 
     ["Africa", "Asia", "North America", "Europe", "Oceania", "South America"],
-    title = "Continents"
+    title = "Continentes"
 )
 
 plt.show()
