@@ -18,7 +18,8 @@ col_2 = np.random.normal(150, 12, 500)
 df = pd.DataFrame({'Age':col_1,
                    'Height': col_2})
 
-
-ax = sns.violinplot(x=df['Height'], inner="quartile")
+# split: para mostrar ambas partes del violín por separado, 
+# inner: para mostrar los cuartiles dentro del violín
+ax = sns.violinplot(x=df['Height'], split= True, inner="quartile")
 
 plt.show()

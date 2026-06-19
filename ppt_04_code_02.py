@@ -8,6 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+#generamos datos al azar para el boxplot
 spread = np.random.rand(50) * 100
 center = np.ones(25) * 50
 flier_high = np.random.rand(10) * 100 + 100

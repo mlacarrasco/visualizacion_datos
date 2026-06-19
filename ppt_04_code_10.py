@@ -20,5 +20,7 @@ df = pd.DataFrame({'Age':col_1,
 
 plt.figure(figsize=(8,8))
 
-ax = sns.violinplot(data=df, inner="quartile")
+# split: para mostrar ambas partes del violín por separado, 
+# inner: para mostrar los cuartiles dentro del violín
+ax = sns.violinplot(data=df, split=True, inner="quartile")
 plt.show()
