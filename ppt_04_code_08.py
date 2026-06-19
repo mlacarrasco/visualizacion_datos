@@ -1,10 +1,15 @@
-import seaborn as sns
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+import plotly.express as px
+import plotly
 
-sns.set_theme(style="whitegrid")
+#importante: este codigo solo se muestra en colab, 
+# por lo que se debe configurar el renderizador de 
+# plotly para colabplotly.io.renderers.default = 'colab'
 
+
+plotly.io.renderers.default = 'colab'
+
+import numpy as np
 
 col_1 = np.random.rand(500) * 80
 col_2 = np.random.normal(150, 12, 500)
@@ -12,7 +17,5 @@ col_2 = np.random.normal(150, 12, 500)
 df = pd.DataFrame({'Age':col_1,
                    'Height': col_2})
 
-
-ax = sns.violinplot(x=df['Height'], inner="quartile")
-
-plt.show()
+fig = px.histogram(df, x="Age",title='Histograma del atributo edad')
+fig.show()

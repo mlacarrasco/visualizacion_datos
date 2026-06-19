@@ -12,7 +12,7 @@ col_2 = np.random.normal(150, 12, 500)
 df = pd.DataFrame({'Age':col_1,
                    'Height': col_2})
 
-plt.figure(figsize=(8,8))
 
-ax = sns.violinplot(data=df, inner="quartile")
+ax = sns.violinplot(x=df['Height'], inner="quartile")
+
 plt.show()

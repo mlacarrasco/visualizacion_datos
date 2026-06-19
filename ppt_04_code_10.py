@@ -1,16 +1,18 @@
+import seaborn as sns
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 
-mu = 200
-sigma = 25
-n_bins = 50
+sns.set_theme(style="whitegrid")
 
-x = np.random.normal(mu, sigma, size=100)
 
-fig, ax = plt.subplots(figsize=(8, 4))
+col_1 = np.random.rand(500) * 80
+col_2 = np.random.normal(150, 12, 500)
 
-ax.grid(True)
-ax.hist(x, n_bins)
-ax.set_title('Rainfall histogram (mm)')
+df = pd.DataFrame({'Age':col_1,
+                   'Height': col_2})
 
+plt.figure(figsize=(8,8))
+
+ax = sns.violinplot(data=df, inner="quartile")
 plt.show()

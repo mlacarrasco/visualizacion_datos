@@ -9,7 +9,7 @@ x = np.random.normal(mu, sigma, size=100)
 
 fig, ax = plt.subplots(figsize=(8, 4))
 
-n, bins, patches = ax.hist(x, n_bins, density=True,
+n, bins, patches = ax.hist(x, n_bins, density=True, histtype='step',
                            cumulative=True, label='Empirical')
 
 ax.grid(True)

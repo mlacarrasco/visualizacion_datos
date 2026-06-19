@@ -58,7 +58,7 @@ lambda_ = np.sqrt(lambda_)
 fig = plt.figure()
 ax = plt.subplot()
 
-n_levels = 20
+n_levels = 40
 for k in range(1, n_levels + 1):
     scale = k / n_levels
     ell = patches.Ellipse(
