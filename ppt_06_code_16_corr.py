@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Mapa de calor (heatmap) de la matriz de correlación del dataset Wine
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd

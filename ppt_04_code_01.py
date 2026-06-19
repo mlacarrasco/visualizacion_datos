@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Strip plot (diagrama de puntos en 1D) de datos de compras por cliente
+
 import pandas as pd
 import matplotlib.pyplot as plt
 

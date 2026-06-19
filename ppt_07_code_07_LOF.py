@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Detección de outliers con Local Outlier Factor (LOF) y visualización proporcional al score
+
 """
 =================================================
 Outlier detection with Local Outlier Factor (LOF)

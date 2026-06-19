@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Escalado multidimensional (MDS) para visualizar el dataset Wine en 2D
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

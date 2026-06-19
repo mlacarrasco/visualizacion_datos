@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Gráfico de barras simple con popularidad de lenguajes de programación
+
 import matplotlib.pyplot as plt
 
 fig = plt.figure()

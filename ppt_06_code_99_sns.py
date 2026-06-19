@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Regresión lineal sobre países de Norteamérica con anotación del valor R
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

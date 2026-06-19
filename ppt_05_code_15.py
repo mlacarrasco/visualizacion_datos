@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Leyenda personalizada con Patch para coloreo por categoría
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch

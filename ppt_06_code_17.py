@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Scatter plot con tamaño y color de puntos variables y doble leyenda
+
 import matplotlib.pyplot as plt
 import numpy as np
 

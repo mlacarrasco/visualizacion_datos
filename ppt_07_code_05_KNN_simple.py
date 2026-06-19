@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Implementación manual de KNN para calcular distancias promedio a los vecinos más cercanos
+
 import numpy as np
 import matplotlib.pyplot as plt
 

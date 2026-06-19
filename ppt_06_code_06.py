@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Marcadores distintos por continente con leyenda automática
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib

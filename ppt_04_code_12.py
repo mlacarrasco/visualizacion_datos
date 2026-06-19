@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Histograma acumulativo continuo
+
 import numpy as np
 import matplotlib.pyplot as plt
 

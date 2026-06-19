@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Test de Grubbs con la librería outlier_utils: detección bilateral, mínima y máxima
+
 import numpy as np
 from outliers import smirnov_grubbs as grubbs
 

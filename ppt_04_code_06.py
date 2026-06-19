@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Histograma interactivo básico con Plotly Express
+
 import pandas as pd
 import plotly.express as px
 

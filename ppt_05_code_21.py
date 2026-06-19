@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Diagrama de Cleveland (dot plot) para comparar valores entre dos años
+
 import pandas as pd
 import matplotlib.pyplot as plt
 

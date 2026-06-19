@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Diagrama de Cleveland con etiquetas de países en el eje Y
+
 import pandas as pd
 import matplotlib.pyplot as plt
 

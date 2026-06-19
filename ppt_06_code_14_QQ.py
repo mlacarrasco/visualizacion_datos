@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Q-Q plot para verificar normalidad y curva de densidad teórica
+
 import numpy as np 
 import scipy.stats as stats
 import matplotlib.pyplot as plt

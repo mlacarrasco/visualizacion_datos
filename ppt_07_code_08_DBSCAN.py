@@ -1,19 +1,9 @@
-"""
- Universidad Diego Portales
- Facultad de Ingeniería y Ciencias
- Visualización de Datos
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Clustering con DBSCAN para identificar puntos de ruido como outliers
 
- 
- Miguel Carrasco (miguel.carrasco@uai.cl)
- version 1.0 (02/09/2019)
-
- 
- Objetivo:
- 1) Clustering de datos con DBSCAN
- 2) Desplegar el resultado en un plot
- 
-    
-"""
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

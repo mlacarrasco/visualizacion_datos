@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Barras apiladas con datos de hombres y mujeres por grupo
+
 import numpy as np
 import matplotlib.pyplot as plt
 

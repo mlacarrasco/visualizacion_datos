@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Detección de outliers con KNN usando scikit-learn y método del punto codo
+
 # $rev.$ version 1.1 / 23/06/2021
 
 import matplotlib.pyplot as plt

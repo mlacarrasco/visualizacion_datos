@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Regresión lineal sobre datos transformados log2/log10 con Seaborn
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

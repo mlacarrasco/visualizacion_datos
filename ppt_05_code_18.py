@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Aplicación de un estilo predefinido de Matplotlib (fivethirtyeight)
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib

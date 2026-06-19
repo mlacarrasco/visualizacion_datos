@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Regresión robusta RANSAC sobre datos sintéticos con outliers artificiales
+
 """
 ===========================================
 Estimación robusta de un modelo lineal usando RANSAC

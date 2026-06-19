@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Cálculo manual del test de Grubbs con scipy.stats para detectar outliers univariados
+
 import numpy as np
 from scipy import stats
 from math import sqrt

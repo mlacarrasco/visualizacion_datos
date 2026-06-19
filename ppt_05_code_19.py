@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Gráfico de torta con subplots desde un DataFrame
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np

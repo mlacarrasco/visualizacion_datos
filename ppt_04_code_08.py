@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Histograma interactivo con Plotly configurado para Google Colab
+
 import pandas as pd
 import plotly.express as px
 import plotly

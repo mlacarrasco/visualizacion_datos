@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Violin plot de una sola variable con Seaborn
+
 import seaborn as sns
 import numpy as np
 import pandas as pd

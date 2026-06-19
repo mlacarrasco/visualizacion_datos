@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Rotación de etiquetas del eje X (rotation=45)
+
 import pandas as pd
 import matplotlib.pyplot as plt
 

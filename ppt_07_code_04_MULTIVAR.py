@@ -1,3 +1,9 @@
+# Universidad Diego Portales
+# Autor: Miguel Carrasco
+# Ver: 1.0
+# Fecha: 19/06/2026
+# Descripción: Detección multivariada con Mahalanobis sobre datos sintéticos con visualización de outliers
+
 import numpy as np
 import random
 import matplotlib.pyplot as plt
