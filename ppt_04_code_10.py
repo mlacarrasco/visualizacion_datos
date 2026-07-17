@@ -22,5 +22,5 @@ plt.figure(figsize=(8,8))
 
 # split: para mostrar ambas partes del violín por separado, 
 # inner: para mostrar los cuartiles dentro del violín
-ax = sns.violinplot(data=df, split=True, inner="quartile")
+ax = sns.violinplot(data=df, split=False, inner="quartile")
 plt.show()
